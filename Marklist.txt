@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+
+public class Marklist {
+	public static void main(String[] args) {
+		
+		float eng,mat,phy,che,cs;
+		double avg,per,tot;
+		Scanner op=new Scanner(System.in);
+		System.out.println("enter English Marks");
+		eng=op.nextFloat();
+		System.out.println("enter Maths marks");
+		mat=op.nextFloat();
+		System.out.println("enter phy marks");
+		phy=op.nextFloat();
+		System.out.println("enter che marks");
+		che=op.nextFloat();
+		System.out.println("enter cs marks");
+		cs=op.nextFloat();
+		tot=eng+mat+phy+che+cs;
+		per=(tot/500)*100;
+		avg=tot/5;
+		if(per>=80)
+		{
+			System.out.println("Grade A");
+		
+		}
+		else if(per>=70&&per<=80)
+		{
+			System.out.println("Grade B");
+		}
+		else if(per>=60&&per<=70)
+		{
+			System.out.println("Grade C");
+		}
+		else if(per>=50&&per<=60)
+		{
+			System.out.println("Grade D");
+					
+		}
+		else if(per>=40&&per<=50)
+		{
+			System.out.println("Grade E");
+		}
+		else
+		{
+			System.out.println("Fail");
+		}
+		System.out.println("average marks:"+avg);
+		System.out.println("percentage:"+per);
+		
+	}
+}	
+ 		
