@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class Avenger {
+	
+	   Scanner sc=new Scanner(System.in);
+	   String name,power,weapon,planet;
+	   int age;
+		
+		public void getDetails() {
+     	
+    	System.out.println("Enter your name:");
+    	name=sc.nextLine();
+    		
+    	System.out.println("Enter your power:");
+    	power=sc.nextLine();
+    	
+    	System.out.println("Enter your weapon:");
+    	weapon=sc.nextLine();
+    	
+    	System.out.println("Enter your planet:");
+    	planet=sc.nextLine();
+    	
+    	System.out.println("Enter your age:");
+    	age=sc.nextInt();
+    	
+     }
+    public void displayDetails()
+    {
+    	System.out.println("your name is:"+name+", your power is:"+power+", your weapon is:"+weapon+",your planet is:"+planet+", your age is:"+age+"");
+    	
+    }
+}
